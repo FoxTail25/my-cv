@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+   <style type="text/css">
+    .bg-orange { fill: #FF7A00; }
+    .bg-dark-orange { fill: #E05300; }
+    .fox-white { fill: #FFFFFF; }
+    .fox-nose { fill: #212529; }
+    .glow-contour { stroke: transparent; stroke-width: 1.5; fill: none; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg-orange { fill: #FF8C21; }
+      .bg-dark-orange { fill: #F0620D; }
+      .fox-nose { fill: #FFFFFF; }
+      .glow-contour { stroke: rgba(255, 255, 255, 0.4); }
+    }
+  </style>
+
+  <!-- Контур (безопасные границы) -->
+  <path class="glow-contour" d="M6 6 L13 16 L16 12 L19 16 L26 6 L24 18 L16 28 L8 18 Z" />
+  
+  <!-- Левое ухо -->
+  <path class="bg-dark-orange" d="M6 6 L14 15 L8 18 Z" />
+  
+  <!-- Правое ухо -->
+  <path class="bg-orange" d="M26 6 L24 18 L18 15 Z" />
+  
+  <!-- Лоб -->
+  <path class="bg-orange" d="M6 6 L26 6 L16 17 Z" />
+  
+  <!-- Левая щека -->
+  <path class="bg-dark-orange" d="M6 6 L16 17 L16 26 L8 18 Z" />
+  
+  <!-- Правая щека -->
+  <path class="bg-orange" d="M26 6 L24 18 L16 26 L16 17 Z" />
+  
+  <!-- Белые вставки под глазами -->
+  <path class="fox-white" d="M11 19 L16 17 L16 26 Z" />
+  <path class="fox-white" d="M21 19 L16 26 L16 17 Z" />
+  
+  <!-- Острый черный носик (теперь четко внутри viewBox) -->
+  <path class="fox-nose" d="M14.5 24 L17.5 24 L16 26 Z" />
+</svg>

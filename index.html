@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- ТЕХНИЧЕСКИЕ НАСТРОЙКИ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-quality="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- СЕО-ОПТИМИЗАЦИЯ (SEO) -->
+    <meta name="description" content="Портфолио Григория Шустикова — Fullstack / Frontend разработчика. Опыт работы в РГБИ, коммерческая верстка, чистый код на Vanilla JS, PHP, Laravel, React и Vue."/>
+    <meta name="keywords" content="Григорий Шустиков, фронтенд разработчик, frontend developer, fullstack, верстка сайтов, веб-разработчик Москва, PHP, Laravel, React, Vue, РГБИ"/>
+    <meta name="author" content="Григорий Шустиков" />
+
+    <!-- МЕЖДУНАРОДНЫЙ СТАНДАРТ OPEN GRAPH (Для превью в Telegram, VK, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <!-- Сюда вставить финальную ссылку после деплоя -->
+    <meta property="og:url" content="https://foxtail25.github.io/my-cv" />
+    <meta property="og:title" content="Григорий Шустиков | Fullstack-разработчик" />
+    <meta property="og:description" content="Сайт-визитка фронтенд-разработчика. Чистый код без тяжелых фреймворков, поддержка темной темы и адаптивная верстка."/>
+    <!-- Ссылка на картинку-превью (например, скриншот главного экрана) -->
+    <meta property="og:image" content="https://foxtail25.github.io/my-cv/img/preview.png"/>
+    <meta property="og:site_name" content="Портфолио Григория Шустикова" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- ДЛЯ TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Григорий Шустиков | Fullstack-разработчик"/>
+    <meta name="twitter:description" content="Сайт-визитка фронтенд-разработчика. Чистый код без фреймворков, поддержка темной темы."/>
+    <meta name="twitter:image" content="https://foxtail25.github.io/my-cv/img/preview.png"/>
+
+    <!-- ТЕМА ДЛЯ ПАНЕЛИ БРАУЗЕРА НА СМАРТФОНАХ -->
+    <meta name="theme-color" content="#f8f9fa" />
+    
+
+    <link rel="icon" href="./favicon.svg?v=3" type="image/svg+xml" sizes="any"/>
+
+    <title>Fullstack-разработчик | Григорий Шустиков</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта и навигация -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#" class="logo">&lt;FoxTail25 /&gt;</a>
+        <ul class="nav-menu">
+          <li><a href="#about">О себе</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <!-- Переключатель темы (светлая / тёмная) -->
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Переключить тему"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. Главный экран (Hero Section) -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Привет, я <span class="highlight">Григорий Шустиков</span></h1>
+          <!-- Для этого элемента сделаем эффект печатной машинки на JS -->
+          <p class="typewriter">
+            Fullstack-разработчик / Laravel &amp; React / Vue
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+            <a href="#contacts" class="btn btn-secondary">Связаться</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. О себе (About) -->
+      <section id="about" class="section about-section">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Fullstack-разработчик с коммерческим опытом более 3.5 лет в
+              поддержке, оптимизации и проектировании веб-приложений. Уверенно
+              пишу бэкенд на <strong>PHP (Laravel)</strong>, на фронтенде
+              использую современный компонентный подход
+              <strong>(React / Next.js / Vue.js)</strong>.
+            </p>
+            <p>
+              Отлично владею чистым JavaScript (Vanilla JS) для создания
+              легковесных интерфейсов. Имею подтвержденный опыт рефакторинга
+              legacy-кода и вывода показателей производительности веб-ресурсов в
+              «зелёную зону» Google Lighthouse.
+            </p>
+            <p>
+              🎓 Выпускник Корпоративного университета Сбербанка (курс
+              «Frontend-разработчик», 2023 г.).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Навыки (Skills) -->
+      <section id="skills" class="section skills-section">
+        <h2 class="section-title">Технологический стек</h2>
+        <div class="skills-container">
+          <!-- Группировка по категориям для удобства рекрутеров -->
+          <div class="skills-category">
+            <h3>Frontend</h3>
+            <ul>
+              <li class="badge advanced">JavaScript (ES6+)</li>
+              <li class="badge advanced">HTML5 &amp; CSS3 / SCSS</li>
+              <li class="badge intermediate">React.js / Next.js</li>
+              <li class="badge intermediate">Vue.js</li>
+              <li class="badge intermediate">TypeScript</li>
+              <li class="badge intermediate">
+                Адаптивная &amp; Кроссбраузерная верстка
+              </li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Backend &amp; Инструменты</h3>
+            <ul>
+              <li class="badge intermediate">PHP / Laravel</li>
+              <li class="badge intermediate">Node.js / REST API</li>
+              <li class="badge intermediate">ООП &amp; AJAX</li>
+              <li class="badge intermediate">Git / GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Опыт работы (Experience) -->
+      <section id="experience" class="section experience-section">
+        <h2 class="section-title">Опыт работы</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">
+              Февраль 2023 — Настоящее время (3.5+ года)
+            </div>
+            <div class="timeline-content">
+              <h3>Программист @ РГБИ</h3>
+              <p class="project-link">
+                Проект:
+                <a
+                  href="http://liart.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Официальный интернет-портал liart.ru</a
+                >
+              </p>
+              <ul class="achievements-list">
+                <li>
+                  <strong>Разработка с нуля:</strong> спроектировал и реализовал
+                  интерактивный сервис-календарь событий для улучшения UX и
+                  навигации посетителей.
+                </li>
+                <li>
+                  <strong>Архитектурный рефакторинг:</strong> успешно перевёл
+                  фронтенд-часть веб-ресурса с монолитного legacy-кода на
+                  современный компонентный подход.
+                </li>
+                <li>
+                  <strong>Оптимизация производительности:</strong> избавился от
+                  тяжеловесных внешних зависимостей, заменив устаревший
+                  jQuery-плагин Nivo Slider на кастомный оптимизированный
+                  компонент слайдера на чистом JavaScript (Vanilla JS).
+                </li>
+                <li>
+                  <strong>Результат:</strong> значительно ускорил время первой
+                  отрисовки страниц (FCP) и вывел показатели Google Lighthouse в
+                  «зелёную зону».
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Портфолио (Projects) -->
+      <section id="projects" class="section projects-section">
+        <h2 class="section-title">Pet-проекты &amp; Практика</h2>
+        <p class="section-subtitle">
+          Избранные репозитории с моего
+          <a href="https://github.com/FoxTail25" target="_blank">GitHub</a>:
+        </p>
+        <div class="projects-grid">
+          <!-- Карточка проекта 1 (Vue) -->
+          <div class="project-card">
+            <h3>Bookmark Storage Service</h3>
+            <p class="project-tech">Стек: Vue.js, JavaScript</p>
+            <p class="project-desc">
+              Сервис для хранения и структурирования пользовательских закладок.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="card-link"
+                >GitHub Код</a
+              >
+            </div>
+          </div>
+          <!-- Карточка проекта 2 (Vue) -->
+          <div class="project-card">
+            <h3>Personal Diary</h3>
+            <p class="project-tech">Стек: Vue.js, CSS</p>
+            <p class="project-desc">
+              Интерактивное приложение личного дневника с компонентной
+              архитектурой.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="card-link"
+                >GitHub Код</a
+              >
+            </div>
+          </div>
+          <!-- Карточка проекта 3 (Vanilla JS) -->
+          <div class="project-card">
+            <h3>Graphic Drawing Component</h3>
+            <p class="project-tech">Стек: Vanilla JS, HTML5 Canvas / CSS</p>
+            <p class="project-desc">
+              Кастомный легковесный компонент для графического рисования на
+              чистом JS.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="card-link"
+                >GitHub Код</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Контакты (Contacts) -->
+      <section id="contacts" class="section contacts-section">
+        <h2 class="section-title">Контакты &amp; Связь</h2>
+        <div class="contacts-wrapper">
+          <div class="contacts-info">
+            <p>
+              Рассматриваю предложения по постоянной работе и подработке
+              (Удалёнка, Гибрид, Офис в Москве).
+            </p>
+            <ul class="contacts-list">
+              <li>
+                📱 <strong>Телефон:</strong>
+                <a href="tel:+79057800777">+7 (905) 780-07-77</a>
+              </li>
+              <li>
+                ✉️ <strong>Email:</strong>
+                <a href="mailto:foxtail25@gmail.com">foxtail25@gmail.com</a>
+              </li>
+              <li>
+                🐙 <strong>GitHub:</strong>
+                <a href="https://github.com/FoxTail25" target="_blank"
+                  >github.com/FoxTail25</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-bottom">
+      <p>
+        &copy; 2026 Григорий Шустиков. Разработано на Vanilla JS &amp; CSS Grid.
+      </p>
+    </footer>
+
+    <script src="/js/themeChange.js"></script>
+    <script src="/js/typeWriterEff.js"></script>
+  </body>
+</html>
