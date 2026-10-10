@@ -344,6 +344,10 @@ img {
     transform: translateY(-5px);
 }
 
+.project-card-link {
+    color: inherit;
+}
+
 .project-tech {
     font-size: 0.85rem;
     color: var(--primary-color);
@@ -357,9 +361,35 @@ img {
     flex-grow: 1;
 }
 
-.card-link {
+/* .card-link {
     font-weight: 600;
     font-size: 0.9rem;
+} */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-card {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color) !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-card:hover {
+    border-color: var(--primary-color);
+    background-color: var(--surface-color);
+    transform: translateY(-2px);
 }
 
 /* Контакты */
