@@ -24,12 +24,28 @@
             try {
                 // Временная имитация отправки для проверки интерфейса
                 // На следующем шаге мы подставим сюда реальный URL шлюза (Telegram или Web3Forms)
-                await new Promise(resolve => setTimeout(resolve, 1000)); 
+                // await new Promise(resolve => setTimeout(resolve, 1000)); 
 
-                // Если отправка прошла успешно:
-                formStatus.textContent = '✨ Сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.';
-                formStatus.classList.add('success');
-                feedbackForm.reset(); // Очищаем форму
+                // // Если отправка прошла успешно:
+                // formStatus.textContent = '✨ Сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.';
+                // formStatus.classList.add('success');
+                // feedbackForm.reset(); // Очищаем форму
+                  // Отправляем данные на шлюз Web3Forms
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    formStatus.textContent = '✨ Сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.';
+                    formStatus.className = 'form-status success';
+                    feedbackForm.reset(); // Очищаем поля формы
+                } else {
+                    throw new Error(result.message);
+                }
+
 
             } catch (error) {
                 // Если произошла ошибка сети
