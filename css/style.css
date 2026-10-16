@@ -446,7 +446,7 @@ img {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: inherit;
-    font-size: 12px;
+    font-size: 1rem;
     transition: var(--transition);
 }
 
