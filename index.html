@@ -249,28 +249,39 @@
       <section id="contacts" class="section contacts-section">
         <h2 class="section-title">Контакты &amp; Связь</h2>
         <div class="contacts-wrapper">
-          <div class="contacts-info">
-            <p>
-              Рассматриваю предложения по постоянной работе и подработке
-              (Удалёнка, Гибрид, Офис в Москве).
-            </p>
-            <ul class="contacts-list">
-              <li>
-                📱 <strong>Телефон:</strong>
-                <a href="tel:+79057800777">+7 (905) 780-07-77</a>
-              </li>
-              <li>
-                ✉️ <strong>Email:</strong>
-                <a href="mailto:foxtail25@gmail.com">foxtail25@gmail.com</a>
-              </li>
-              <li>
-                🐙 <strong>GitHub:</strong>
-                <a href="https://github.com/FoxTail25" target="_blank"
-                  >github.com/FoxTail25</a
-                >
-              </li>
-            </ul>
-          </div>
+
+                  <div class="contacts-grid">
+            
+            <!-- Левая колонка: Прямые контакты -->
+            <div class="contacts-info">
+                <p>Рассматриваю предложения по постоянной работе и подработке (Удалёнка, Гибрид, Офис в Москве).</p>
+                <ul class="contacts-list">
+                    <li>📱 <strong>Телефон:</strong> <a href="tel:+79057800777">+7 (905) 780-07-77</a></li>
+                    <li>✉️ <strong>Email:</strong> <a href="mailto:foxtail25@gmail.com">foxtail25@gmail.com</a></li>
+                    <li>🐙 <strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">://github.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Правая колонка: Интерактивная форма -->
+            <div class="contacts-form-container">
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <label for="form-name">Ваше имя / Компания</label>
+                        <input type="text" id="form-name" name="name" required placeholder="Иван (HR @ Google)">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-contact">Контакт для связи</label>
+                        <input type="text" id="form-contact" name="contact" required placeholder="Telegram или Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Сообщение</label>
+                        <textarea id="form-message" name="message" required rows="4" placeholder="Привет! Понравился твой опыт работы и резюме, давай обсудим вакансию..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Отправить сообщение</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+
         </div>
       </section>
     </main>
@@ -283,5 +294,6 @@
 
     <script src="./js/themeChange.js"></script>
     <script src="./js/typeWriterEff.js"></script>
+    <script src="./js/sendForm.js"></script>
   </body>
 </html>

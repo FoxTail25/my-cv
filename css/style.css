@@ -361,11 +361,6 @@ img {
     flex-grow: 1;
 }
 
-/* .card-link {
-    font-weight: 600;
-    font-size: 0.9rem;
-} */
-
 .project-links {
     display: flex;
     flex-wrap: wrap;
@@ -410,6 +405,70 @@ img {
     font-size: 1.1rem;
 }
 
+/* Сетка для блока контактов */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .contacts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Стилизация полей ввода */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 12px;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Статусы отправки */
+.form-status {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+.form-status.success { color: var(--accent-color); }
+.form-status.error { color: #dc3545; }
+
+/* футер */
 .footer-bottom {
     text-align: center;
     padding: 30px 20px;
