@@ -1,7 +1,7 @@
 # 👨‍💻 Персональный сайт-портфолио (CV)
 
-[![GitHub Pages](https://shields.io)](https://foxtail25.github.io/my-cv/)
-[![Commercial Experience](https://shields.io)](https://foxtail25.github.io/my-cv/)
+[![GitHub Pages](https://shields.io)](https://foxtail25.github.io/)
+[![Commercial Experience](https://shields.io)](https://foxtail25.github.io/my-cv/#experience)
 [![Language](https://shields.io)](https://foxtail25.github.io/my-cv/)
 
 > **[🌐 Открыть живую версию сайта-резюме](https://foxtail25.github.io/my-cv/)**
