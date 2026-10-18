@@ -1,9 +1,4 @@
 # 👨‍💻 Персональный сайт-портфолио (CV)
-
-[![GitHub Pages](https://shields.io)](https://foxtail25.github.io/)
-[![Commercial Experience](https://shields.io)](https://foxtail25.github.io/my-cv/#experience)
-[![Language](https://shields.io)](https://foxtail25.github.io/my-cv/)
-
 > **[🌐 Открыть живую версию сайта-резюме](https://foxtail25.github.io/my-cv/)**
 
 Интерактивное адаптивное веб-портфолио Fullstack-разработчика. Проект создан на чистом **Vanilla JS** и кастомном **CSS Grid/Flexbox**, демонстрируя навыки чистой верстки, оптимизации производительности и создания отзывчивых интерфейсов без тяжеловесных сторонних фреймворков.
