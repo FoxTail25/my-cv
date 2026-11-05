@@ -27,6 +27,9 @@ body.dark-theme {
     --border-color: #333333;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+.dark-theme .footerIcon {
+    filter: invert(100%);
+}
 
 * {
     box-sizing: border-box;
@@ -483,7 +486,33 @@ img {
     background-color: var(--surface-color);
     color: var(--text-muted);
     font-size: 0.9rem;
+    line-height: 1.5; /* Добавим межстрочный интервал для аккуратного переноса на мобильных */
 }
+
+/* Изменяем footer p: убираем grid, возвращаем естественный поток текста */
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Стилизуем ссылку-контейнер для иконки */
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle; /* Идеально выравнивает по базовой линии текста */
+    margin: 0 4px; /* Небольшие отступы слева и справа от текста */
+    transition: opacity 0.2s ease-in-out; /* Плавный эффект при наведении */
+}
+
+.footer-link:hover {
+    opacity: 0.8; /* Картинка будет мягко менять прозрачность при наведении */
+}
+
+.footerIcon {
+    width: 24px;  /* 32px может выглядеть слишком крупно для шрифта 0.9rem (примерно 14-15px) */
+    height: 24px; /* Оптимально делать иконку чуть больше высоты прописной буквы */
+    display: block;
+}
+
 
 /* ==========================================================================
    7. АДАПТИВНОСТЬ (MEDIA QUERIES) -> ПОД ПК И ПЛАНШЕТЫ
