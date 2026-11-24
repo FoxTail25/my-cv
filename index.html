@@ -19,7 +19,7 @@
     <!-- Сюда финальную ссылку после деплоя -->
     <meta property="og:url" content="https://foxtail25.ru" >
     <meta property="og:title" content="Григорий Шустиков | Fullstack-разработчик" >
-    <meta property="og:description" content="Сайт-визитка фронтенд-разработчика. Чистый код без тяжелых фреймворков, поддержка темной темы и адаптивная верстка.">
+    <meta property="og:description" content="Сайт-визитка Fullstack-разработчика. Чистый код без тяжелых фреймворков, поддержка темной темы и адаптивная верстка.">
     <!-- Ссылка на картинку-превью (скриншот главного экрана) -->
     <meta property="og:image" content="https://foxtail25.ru/img/preview.png">
     <meta property="og:site_name" content="Портфолио Григория Шустикова" >
@@ -86,9 +86,8 @@
             </p>
             <p>
               Fullstack-разработчик с коммерческим опытом более 3.5 лет в
-              поддержке, оптимизации и проектировании веб-приложений. Уверенно
-              пишу бэкенд на <strong>PHP (Laravel)</strong>, на фронтенде
-              использую современный компонентный подход
+              поддержке, оптимизации и развитии веб-порталов. В современных
+              проектах использую стек <strong>Laravel</strong> и компонентный фронтенд
               <strong>(React / Next.js / Vue.js)</strong>.
             </p>
             <p>
@@ -127,6 +126,7 @@
               <li class="badge intermediate">ООП &amp; AJAX</li>
               <li class="badge intermediate">Git / GitHub</li>
               <li class="badge intermediate">Docker / Docker Compose</li>
+              <li class="badge intermediate">SQLite / MySQL</li>
             </ul>
           </div>
         </div>
@@ -141,11 +141,11 @@
               Февраль 2023 — Настоящее время (3.5+ года)
             </div>
             <div class="timeline-content">
-              <h3>Программист @ РГБИ</h3>
+              <h3>Программист @ РГБИ (Российская государственная библиотека искусств)</h3>
               <p class="project-link">
                 Проект:
                 <a
-                  href="http://liart.ru"
+                  href="https://liart.ru"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Официальный интернет-портал liart.ru</a
@@ -154,11 +154,11 @@
               <ul class="achievements-list">
                 <li>
                   <strong>Разработка с нуля:</strong> спроектировал и реализовал
-                  микросервис "интерактивный календарь событий" для улучшения UX и
+                  микросервис «интерактивный календарь событий» для улучшения UX и
                   навигации посетителей.
                 </li>
                 <li>
-                  <strong>Архитектурный рефакторинг:</strong> Декомпозиция монолитного legacy-кода, разбиение крупных файлов шаблонов на поддерживаемые модули и очистка от неиспользуемого кода.
+                  <strong>Архитектурный рефакторинг:</strong> декомпозиция монолитного legacy-кода, разбиение крупных файлов шаблонов на поддерживаемые модули и очистка от неиспользуемого кода.
                 </li>
                 <li>
                   <strong>Оптимизация производительности:</strong> избавился от
@@ -185,88 +185,37 @@
           <a href="https://github.com/FoxTail25" target="_blank">GitHub</a>:
         </p>
         <div class="projects-grid">
-          <!-- Карточка проекта 1 (Vanila JS) -->
+
+          <!-- Карточка проекта 1 (Laravel + Vue) -->
           <article class="project-card">
-            <a href="https://foxtail25.github.io/code_mu_proj_cards-popular-words/" target="_blank" rel="noopener noreferrer" class="project-card-link">
-              <h3>Карточки 1000 английских слов</h3>
+            <a href="https://github.com/FoxTail25/radio-collection" target="_blank" rel="noopener noreferrer"
+              class="project-card-link">
+              <h3>Сборник радиостанций</h3>
             </a>
-            <p class="project-tech">Стек: Vanilla JS, CSS, </p>
+            <p class="project-tech">Стек: Laravel13, Vue3.4, Inertia.js, Filament, Docker</p>
             <p class="project-desc">
-              Интерактивное веб-приложение для эффективного заучивания самых популярных слов английского языка.
+              Коллекция интернет-радиостанций с различными каналами, фильтрацией результатов и кастомным плеером. Также
+              реализована админка Filament для добавления, редактирования и удаления станций и каналов.
             </p>
             <div class="project-links">
-              <a href="https://foxtail25.github.io/code_mu_proj_cards-popular-words/" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
+              <a href="https://radio.foxtail25.ru" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
                 🌐 Живое демо
               </a>
-              <a href="https://github.com/FoxTail25/code_mu_proj_cards-popular-words" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/FoxTail25/radio-collection" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-github">
                 🐙 Исходный код
               </a>
             </div>
           </article>
-          <!-- Карточка проекта 2 (Vue) -->
-          <article class="project-card">
-            <a href="https://foxtail25.github.io/code_mu_proj_bookmark_storage_service/" target="_blank" rel="noopener noreferrer" class="project-card-link">
-              <h3>Сервис закладок</h3>
-            </a>
-            <p class="project-tech">Стек: Vue.js, Bootstrap, </p>
-            <p class="project-desc">
-              Сервис для хранения и структурирования пользовательских закладок.
-            </p>
-            <div class="project-links">
-              <a href="https://foxtail25.github.io/code_mu_proj_bookmark_storage_service/" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
-                🌐 Живое демо
-              </a>
-              <a href="https://github.com/FoxTail25/code_mu_proj_bookmark_storage_service" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
-                🐙 Исходный код
-              </a>
-            </div>
-          </article>
-          <!-- Карточка проекта 3 (Vue) -->
-          <article class="project-card">
-            <a href="https://foxtail25.github.io/code_mu_proj_personal-diary_vue/" target="_blank" rel="noopener noreferrer" class="project-card-link">  
-              <h3>Персональный дневник</h3>
-            </a>
-            <p class="project-tech">Стек: Vue.js, CSS</p>
-            <p class="project-desc">
-              Интерактивное приложение личного дневника с компонентной
-              архитектурой.
-            </p>
-            <div class="project-links">
-              <a href="https://foxtail25.github.io/code_mu_proj_personal-diary_vue/" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
-                🌐 Живое демо
-              </a>
-              <a href="https://github.com/FoxTail25/code_mu_proj_personal-diary_vue" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
-                🐙 Исходный код
-              </a>
-            </div>
-          </article>
-          <!-- Карточка проекта 4 (Vanilla JS) -->
-          <article class="project-card">
-            <a href="https://foxtail25.github.io/code_mu_proj_graphic_drawing/" target="_blank" rel="noopener noreferrer" class="project-card-link">
-              <h3>Рисование на канвасе</h3>
-            </a>
-            <p class="project-tech">Стек: Vanilla JS, HTML5 Canvas / CSS</p>
-            <p class="project-desc">
-              Кастомный легковесный компонент для графического рисования на
-              чистом JS.
-            </p>
-            <div class="project-links">
-              <a href="https://foxtail25.github.io/code_mu_proj_graphic_drawing/" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
-                🌐 Живое демо
-              </a>
-              <a href="https://github.com/FoxTail25/code_mu_proj_graphic_drawing" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
-                🐙 Исходный код
-              </a>
-            </div>
-          </article>
-          <!-- Карточка проекта 5 (php MVC) -->
+          <!-- Карточка проекта 2 (php MVC) -->
           <article class="project-card">
             <a href="https://github.com/FoxTail25/create-MVC" target="_blank" rel="noopener noreferrer" class="project-card-link">
-              <h3>MVC-фремворк на чистом PHP</h3>
+              <h3>MVC-фреймворк на чистом PHP</h3>
             </a>
-            <p class="project-tech">Стек: php </p>
+            <p class="project-tech">Стек: PHP 8+ (ООП, PDO, SQLite)</p>
             <p class="project-desc">
-              Это демонстрационный пет-проект легковесного MVC-фреймворка, написанного на чистом PHP.
+              Самописный MVC-фреймворк на чистом PHP (PSR-4) с собственной Light ORM, диспетчеризацией через Reflection API,
+              PDO-защитой от SQL-инъекций и встроенной БД SQLite.
             </p>
             <div class="project-links">
               <!-- <a href="https://foxtail25.github.io/code_mu_proj_graphic_drawing/" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
@@ -277,24 +226,94 @@
               </a>
             </div>
           </article>
-          <!-- Карточка проекта 6 (Laravel + Vue) -->
+
+          <!-- Карточка проекта 3 (Vue) -->
           <article class="project-card">
-            <a href="https://github.com/FoxTail25/radio-collection" target="_blank" rel="noopener noreferrer" class="project-card-link">
-              <h3>Сборник радиостанций</h3>
+            <a href="https://foxtail25.github.io/code_mu_proj_bookmark_storage_service/" target="_blank" rel="noopener noreferrer"
+              class="project-card-link">
+              <h3>Сервис закладок</h3>
             </a>
-            <p class="project-tech">Стек: Laravel13 + Vue3.4 </p>
+            <p class="project-tech">Стек: Vue.js, Pinia, Bootstrap </p>
             <p class="project-desc">
-              Коллекция интернет радиостанций с различными каналами, фильтрацией результатов и кастомным плеером. Так же реализована админка filament для добавления, редактирования и удаления станций и каналов.
+              Сервис для хранения и структурирования пользовательских закладок.
             </p>
             <div class="project-links">
-              <a href="https://radio.foxtail25.ru" target="_blank" rel="noopener noreferrer" class="btn-card btn-demo">
+              <a href="https://foxtail25.github.io/code_mu_proj_bookmark_storage_service/" target="_blank"
+                rel="noopener noreferrer" class="btn-card btn-demo">
                 🌐 Живое демо
               </a>
-              <a href="https://github.com/FoxTail25/radio-collection" target="_blank" rel="noopener noreferrer" class="btn-card btn-github">
+              <a href="https://github.com/FoxTail25/code_mu_proj_bookmark_storage_service" target="_blank"
+                rel="noopener noreferrer" class="btn-card btn-github">
                 🐙 Исходный код
               </a>
             </div>
           </article>
+          <!-- Карточка проекта 4 (Vanila JS) -->
+          <article class="project-card">
+            <a href="https://foxtail25.github.io/code_mu_proj_cards-popular-words/" target="_blank" rel="noopener noreferrer"
+              class="project-card-link">
+              <h3>Карточки 1000 английских слов</h3>
+            </a>
+            <p class="project-tech">Стек: Vanilla JS, CSS </p>
+            <p class="project-desc">
+              Интерактивное веб-приложение для эффективного заучивания самых популярных слов английского языка.
+            </p>
+            <div class="project-links">
+              <a href="https://foxtail25.github.io/code_mu_proj_cards-popular-words/" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-demo">
+                🌐 Живое демо
+              </a>
+              <a href="https://github.com/FoxTail25/code_mu_proj_cards-popular-words" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-github">
+                🐙 Исходный код
+              </a>
+            </div>
+          </article>
+          <!-- Карточка проекта 5 (Vanilla JS) -->
+          <article class="project-card">
+            <a href="https://foxtail25.github.io/code_mu_proj_graphic_drawing/" target="_blank" rel="noopener noreferrer"
+              class="project-card-link">
+              <h3>Рисование на канвасе</h3>
+            </a>
+            <p class="project-tech">Стек: Vanilla JS, HTML5 Canvas / CSS</p>
+            <p class="project-desc">
+              Кастомный легковесный компонент для графического рисования на
+              чистом JS.
+            </p>
+            <div class="project-links">
+              <a href="https://foxtail25.github.io/code_mu_proj_graphic_drawing/" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-demo">
+                🌐 Живое демо
+              </a>
+              <a href="https://github.com/FoxTail25/code_mu_proj_graphic_drawing" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-github">
+                🐙 Исходный код
+              </a>
+            </div>
+          </article>
+          <!-- Карточка проекта 6 (Vue) -->
+          <article class="project-card">
+            <a href="https://foxtail25.github.io/code_mu_proj_personal-diary_vue/" target="_blank" rel="noopener noreferrer"
+              class="project-card-link">
+              <h3>Персональный дневник</h3>
+            </a>
+            <p class="project-tech">Стек: Vue.js, CSS</p>
+            <p class="project-desc">
+              Интерактивное приложение личного дневника с компонентной
+              архитектурой.
+            </p>
+            <div class="project-links">
+              <a href="https://foxtail25.github.io/code_mu_proj_personal-diary_vue/" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-demo">
+                🌐 Живое демо
+              </a>
+              <a href="https://github.com/FoxTail25/code_mu_proj_personal-diary_vue" target="_blank" rel="noopener noreferrer"
+                class="btn-card btn-github">
+                🐙 Исходный код
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -312,7 +331,7 @@
                     <li>📱 <strong>Телефон:</strong> <a href="tel:+79057800777">+7 (905) 780-07-77</a></li>
                     <li>✉️ <strong>Email:</strong> <a href="mailto:foxtail25@gmail.com">foxtail25@gmail.com</a></li>
                     <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/FoxTail25" target="_blank" rel="noopener noreferrer">https://github.com/FoxTail25</a></li>
-                    <li>✈️ <strong>Telegram</strong> <a href="https://t.me/Siverk" target="_blank" rel="noopener noreferrer">Siverk</a></li>
+                    <li>✈️ <strong>Telegram:</strong> <a href="https://t.me/Siverk" target="_blank" rel="noopener noreferrer">@Siverk</a></li>
                 </ul>
             </div>
 
@@ -344,9 +363,9 @@
     <footer class="footer-bottom">
       <p>
         &copy; 2026 Григорий Шустиков.
-        <a class="footer-link" href="https://github.com" aria-label="Перейти на мой профиль GitHub" target="_blank"
+        <a class="footer-link" href="https://github.com/FoxTail25" aria-label="Перейти на мой профиль GitHub" target="_blank"
           rel="noreferrer noopener">
-          <img class="footerIcon" src="./img/github-brands-solid-full.svg" alt="my GitHub">
+          <img class="footerIcon" src="./img/github-brands-solid-full.svg" alt="GitHub Григория Шустикова">
         </a>
         Разработано на Vanilla JS &amp; CSS Grid.
       </p>
